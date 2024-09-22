@@ -87,3 +87,28 @@ button {
   gap: 5px;
   margin-top: 30px;
 }
+
+.container {
+  display: grid;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.hero-gallery {
+  width: 90%;
+  margin: auto;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.hero-gallery > img {
+  height: 300px;
+  width: 330px;
+  margin-top: 50px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
