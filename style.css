@@ -176,7 +176,7 @@ button > img {
 
 .hero-gallery img {
   height: 300px;
-  width: 330px;
+  width: 100%;
   margin-top: 50px;
   border-radius: 10px;
   object-fit: cover;
