@@ -86,8 +86,24 @@ h2 {
   color: rgba(0, 0, 0, 0.7);
 }
 
+header .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+header .icon img {
+  width: 100%;
+  height: auto;
+}
+
 .form-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -95,9 +111,27 @@ h2 {
   margin-top: 30px;
 }
 
+.form-container .box {
+  flex: 1 1 45%;
+  min-width: 150px;
+}
+
 .font-info {
   color: rgba(0, 0, 0, 0.842);
   font-weight: 500;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.icons a {
+  flex: 0 1 auto;
+  text-align: center;
 }
 
 button {
@@ -135,7 +169,7 @@ button > img {
   margin: auto;
   gap: 20px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: repeat(4, 1fr);
   margin-bottom: 100px;
 }
